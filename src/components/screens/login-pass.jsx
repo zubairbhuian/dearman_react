@@ -41,7 +41,6 @@ export default function LoginPass() {
                 </a>
               </div>
             </form>
-
             <p>
               Don't have an account yet?
               <a className="link ps-3" href="lynx-for-free.html">
