@@ -17569,6 +17569,14 @@ td.seriel_number {
   .container-fluid {
     padding-right: 0;
   }
+  .doowlX {
+    left: -100% !important;
+}
+.gZTweu {
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+}
 }
 
 .notifi {

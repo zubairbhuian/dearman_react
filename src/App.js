@@ -5,7 +5,6 @@ import Address from "./components/screens/forms/Address";
 import ConfirmName from "./components/screens/forms/ConfirmName";
 import Login from "./components/screens/Login";
 import LoginPass from "./components/screens/login-pass";
-import BillingNotifications from "./components/screens/BillingNotifications";
 import UsernameAndPassword from "./components/screens/forms/UsernameAndPassword";
 import BusinessInfo from "./components/screens/forms/BusinessInfo";
 import Finish from "./components/screens/forms/Finish";
@@ -15,14 +14,14 @@ import PurchaseServices from "./components/screens/PurchaseServices";
 import ProductsLicenses from "./components/screens/ProductsLicenses";
 import PaymentHistory from "./components/screens/PaymentHistory";
 import PaymentMethods from "./components/screens/payment_methods/PaymentMethods";
-import DemoTable from "./components/screens/DemoTable";
+import BillingNotifications from "./components/screens/billing_notifications/BillingNotifications";
 
 export default function App() {
   return (
     <>
       <Routes>
         {/*============= profile section ===============*/}
-        <Route path="/" element={<DemoTable />} />
+        <Route path="/" element={<PaymentMethods />} />
         <Route path="/profilesetting" element={<ProfileSetting />} />
         <Route path="/purchaseservices" element={<PurchaseServices />} />
         <Route path="/productslicenses" element={<ProductsLicenses />} />

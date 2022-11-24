@@ -2,8 +2,8 @@ import React from "react";
 import { FiPlus } from "react-icons/fi";
 import { BsFillCheckCircleFill } from "react-icons/bs";
 
-import Sidebar from '../Navbar/Sidebar'
-import Topbar from '../Navbar/Topbar'
+import Sidebar from '../../Navbar/Sidebar'
+import Topbar from '../../Navbar/Topbar'
 
 export default function BillingNotifications() {
   return (
