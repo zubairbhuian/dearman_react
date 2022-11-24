@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Address() {
   return (
@@ -115,18 +116,18 @@ export default function Address() {
                     </div>
 
                     <div className="mb-5"></div>
-                    <a
-                      href="confirmname.html"
+                    <Link
+                      to="/confirmName"
                       className="secound-btn mt-5 me-2 bg-tra"
                     >
                       back
-                    </a>
-                    <a
-                      href="usernameandpassword.html"
+                    </Link>
+                    <Link
+                      to="/usernameandpassword"
                       className="secound-btn mt-5  "
                     >
                       Next
-                    </a>
+                    </Link>
                   </form>
                 </div>
               </div>

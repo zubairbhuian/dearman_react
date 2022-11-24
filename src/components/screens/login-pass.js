@@ -1,6 +1,7 @@
 import React from "react";
 import Logo from "../assets/images/logo.png";
 import BgImg from "../assets/images/login_bg.jpg";
+import { NavLink } from "react-router-dom";
 
 export default function LoginPass() {
   return (
@@ -8,9 +9,9 @@ export default function LoginPass() {
       <img className="login-page-bg" src={BgImg} alt="" />
       <nav className="navbar">
         <div className="container-fluid">
-          <a className="py-2 px-4" href="login.html">
+          <NavLink className="py-2 px-4" to="login.html">
             <img src={Logo} alt="logo" />
-          </a>
+          </NavLink>
         </div>
       </nav>
       <div className="main-body">
@@ -20,9 +21,9 @@ export default function LoginPass() {
             <h6>Username</h6>
             <p>
               oilisgood@oilcompany.com
-              <a className="link ps-3" href="login.html">
+              <NavLink className="link ps-3" to="/login">
                 Change email
-              </a>
+              </NavLink>
             </p>
             <form action="#">
               <div className="mb-3">
@@ -36,16 +37,16 @@ export default function LoginPass() {
                 />
               </div>
               <div className="my-5 me-2">
-                <a className="secound-btn radious" href="index.html">
+                <NavLink className="secound-btn radious" to="#">
                   Next
-                </a>
+                </NavLink>
               </div>
             </form>
             <p>
               Don't have an account yet?
-              <a className="link ps-3" href="lynx-for-free.html">
+              <NavLink className="link ps-3" to="#">
                 Sign up for free.
-              </a>
+              </NavLink>
             </p>
           </div>
         </div>

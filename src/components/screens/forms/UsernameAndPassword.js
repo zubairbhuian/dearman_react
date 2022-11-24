@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function UsernameAndPassword() {
   return (
@@ -75,12 +76,12 @@ export default function UsernameAndPassword() {
                     </div>
 
                     <div class="mb-5"></div>
-                    <a href="address.html" class="secound-btn mt-5 me-2 bg-tra">
+                    <Link to="/address" class="secound-btn mt-5 me-2 bg-tra">
                       back
-                    </a>
-                    <a href="businessinfo.html" class="secound-btn mt-5  ">
+                    </Link>
+                    <Link to="/businessinfo" class="secound-btn mt-5  ">
                       Next
-                    </a>
+                    </Link>
                   </form>
                 </div>
               </div>

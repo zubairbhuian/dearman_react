@@ -17501,3 +17501,245 @@ td.seriel_number {
 .carriers_card .tab-data {
   margin-top: 40px;
 }
+/* ======================================= */
+/* ======================================= */
+/* =================SIDE NAVBAR====================== */
+/* ======================================= */
+/* ======================================= */
+
+
+.side-appbar .dpUPCB,
+.side-appbar .dmCaFX {
+  margin-left: 0 !important;
+  font-size: 14px;
+  color: var(--text-color) !important;
+  padding: 0;
+}
+
+.side-appbar .eOiCTH,
+.side-appbar .dmCaFX {
+  padding: 8px 10px !important;
+  height: auto !important;
+  transition: all 0.3s ease-in-out;
+}
+
+.side-appbar .dmCaFX {
+  padding-left: 30px !important;
+  background: transparent !important;
+}
+
+.side-appbar .YLzOj {
+  font-size: 16px;
+  height: 40px;
+}
+
+.side-appbar .eOiCTH:hover,
+.side-appbar .dmCaFX:hover {
+  background-color: var(--secondary-light-color) !important;
+  letter-spacing: 0.5px !important;
+  border: none !important;
+}
+
+.side-appbar .sc-hLBbgP.iHvfRs.toggle_icon {
+  position: absolute;
+  top: 10px;
+  left: -10px;
+}
+
+.main-body .side-appbar {
+  background-color: transparent !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: var(--white-color);
+  font-size: 14px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: var(--white-color);
+}
+
+
+.container-fluid {
+  padding-right: 150px;
+}
+
+
+@media screen and (max-width:991px) {
+  .container-fluid {
+    padding-right: 0;
+  }
+}
+
+.notifi {
+  padding: 2px 10px;
+  background: var(--bs-blue);
+  border-radius: 100px;
+  font-size: 12px;
+  position: relative;
+  top: -10px;
+}
+
+.kVEXPo {
+  font-size: 22px !important;
+  height: 25px !important;
+  margin: 20px 0;
+  margin-left: 20px !important;
+
+}
+
+
+@media screen and (max-width:991px) {
+  .header {
+    padding: 16px 30px;
+  }
+
+
+  .top_nav-toggle {
+    margin-left: auto;
+  }
+
+  .main-body .side-appbar {
+    display: block;
+    top: 0
+  }
+
+  .toggle_icon svg {
+    color: var(--white-color) !important;
+    font-size: 22px;
+  }
+
+  .doowlX {
+    left: -100% !important;
+  }
+
+  .gZTweu {
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+  }
+
+  div#basic-navbar-nav {
+    margin-top: 30px !important;
+  }
+
+}
+
+
+.sidebar {
+  width: 280px;
+  min-height: 100vh;
+  box-shadow: 0px 4px 8px rgb(0 0 0 / 16%);
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  z-index: 1;
+  transition: 0.5s;
+}
+
+.sidebar.active {
+  left: 0;
+}
+
+.sd-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.sidebar-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.sidebar-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.sd-body {
+  padding: 15px;
+  max-height: calc(100vh - 67px);
+  overflow-x: hidden;
+}
+
+.sd-body ul {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.sd-body ul li {
+  list-style: none;
+  margin-bottom: 8px;
+}
+
+.sd-body ul li .sd-link {
+  display: inline-block;
+  width: 100%;
+  padding: 10px 16px;
+  color: #475f7b;
+  background-color: #e5e8ec;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#top-user-info-list{
+  display: none;
+  position: absolute;
+  top: 64px;
+  background: #0078d4;
+  padding: 20px;
+}
+
+
+#top-user-info-list.isopen{
+  display: block;
+}
+
+#top-user-info-list .navbar-nav{
+display: flex;
+flex-direction: column;
+}
+
+.filter-insights .isopen{
+  display: none;
+}
+
+.top-user{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  color: var(--white-color);
+  cursor: pointer;
+  position: relative;
+}
+
+.user-info-list{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.user-info-list p{
+  margin: 0 10px;
+}
+
+.user-drop-sub-toggleer ul{
+display: none;
+}
+
+.user-drop-sub-toggleer ul.subOpen{
+display: block;
+}

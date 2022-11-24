@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function BusinessInfo() {
   return (
@@ -111,15 +112,15 @@ export default function BusinessInfo() {
                     </div>
 
                     <div class="mb-5"></div>
-                    <a
-                      href="usernameandpassword.html"
+                    <Link
+                      to="/usernameandpassword"
                       class="secound-btn mt-5 me-2 bg-tra"
                     >
                       back
-                    </a>
-                    <a href="finish.html" class="secound-btn mt-5  ">
+                    </Link>
+                    <Link to="/finish" class="secound-btn mt-5  ">
                       Next
-                    </a>
+                    </Link>
                   </form>
                 </div>
               </div>

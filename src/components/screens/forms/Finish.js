@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Finish() {
   return (
@@ -43,36 +44,36 @@ export default function Finish() {
                       <b>Username</b>
                     </h6>
                     <p>FlintHills</p>
-                    <a class="nav-link h-underline" href="customers.html">
+                    <Link class="nav-link h-underline" to="//customers">
                       Edit
-                    </a>
+                    </Link>
                   </div>
                   <div class="col mb-3">
                     <h6>
                       <b>Password</b>
                     </h6>
                     <p>ConorSmells</p>
-                    <a class="nav-link h-underline" href="customers.html">
+                    <Link class="nav-link h-underline" to="/customers">
                       Edit{" "}
-                    </a>
+                    </Link>
                   </div>
                   <div class="col mb-3">
                     <h6>
                       <b>Company Name</b>
                     </h6>
                     <p>Flint Hills Resources</p>
-                    <a class="nav-link h-underline" href="customers.html">
+                    <Link class="nav-link h-underline" to="/customers">
                       Edit{" "}
-                    </a>
+                    </Link>
                   </div>
                   <div class="col mb-3">
                     <h6>
                       <b>Reference Code</b>
                     </h6>
                     <p>Flint Hills</p>
-                    <a class="nav-link h-underline" href="customers.html">
+                    <Link class="nav-link h-underline" to="/customers">
                       Edit{" "}
-                    </a>
+                    </Link>
                   </div>
                   <div class="col mb-3">
                     <h6>
@@ -82,79 +83,79 @@ export default function Finish() {
                       2651 Kipling St. <br /> Suite 5200 <br /> Houston, TX
                       77098
                     </p>
-                    <a class="nav-link h-underline" href="customers.html">
+                    <Link class="nav-link h-underline" to="/customers">
                       Edit{" "}
-                    </a>
+                    </Link>
                   </div>
                   <div class="col mb-3">
                     <h6>
                       <b>Class of Business</b>
                     </h6>
                     <p></p>
-                    <a class="nav-link h-underline" href="customers.html">
+                    <Link class="nav-link h-underline" to="/customers">
                       Edit{" "}
-                    </a>
+                    </Link>
                   </div>
                   <div class="col mb-3">
                     <h6>
                       <b>External Acct Number</b>
                     </h6>
                     <p>146546646489</p>
-                    <a
+                    <Link
                       class="nav-link h-underline disabled"
-                      href="customers.html"
+                      to="/customers"
                     >
                       Cannot Edit{" "}
-                    </a>
+                    </Link>
                   </div>
                   <div class="col mb-3">
                     <h6>
                       <b>EPA Comp ID</b>
                     </h6>
                     <p></p>
-                    <a class="nav-link h-underline" href="customers.html">
+                    <Link class="nav-link h-underline" to="/customers">
                       Edit{" "}
-                    </a>
+                    </Link>
                   </div>
                   <div class="col mb-3">
                     <h6>
                       <b>FEIN Number</b>
                     </h6>
                     <p>99-9999999</p>
-                    <a class="nav-link h-underline" href="customers.html">
+                    <Link class="nav-link h-underline" to="/customers">
                       Edit{" "}
-                    </a>
+                    </Link>
                   </div>
                   <div class="col mb-3">
                     <h6>
                       <b>IRS Control Code</b>
                     </h6>
                     <p></p>
-                    <a class="nav-link h-underline" href="customers.html">
+                    <Link class="nav-link h-underline" to="/customers">
                       Edit{" "}
-                    </a>
+                    </Link>
                   </div>
                   <div class="col mb-3">
                     <h6>
                       <b>IRS 637 Number</b>
                     </h6>
                     <p></p>
-                    <a class="nav-link h-underline" href="customers.html">
+                    <Link class="nav-link h-underline" to="/customers">
                       Edit{" "}
-                    </a>
+                    </Link>
                   </div>
                 </div>
 
                 <div class="mb-5"></div>
-                <a
-                  href="businessinfo.html"
+                <Link
+                  to="/businessinfo"
                   class="secound-btn mt-5 me-2 bg-tra"
                 >
                   back
-                </a>
-                <a href="successfulaccount.html" class="secound-btn mt-5  ">
+                </Link>
+                <Link to="/successfulaccount" class="secound-btn mt-5  ">
                   Finish
-                </a>
+                </Link>
               </div>
             </div>
           </div>
