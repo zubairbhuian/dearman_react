@@ -8,9 +8,9 @@ export default function PsAddress() {
       <h3 className="mb-5 mt-3">Address</h3>
       <p>Make sure your businesses address is up to date.</p>
       <Accordion defaultActiveKey="0">
-        <Accordion.Item eventKey="0">
+        <Accordion.Item eventKey="1">
           <Accordion.Header>
-            <BsHouse  className="me-2 icon-22"/>
+            <BsHouse className="me-2 icon-22" />
             This address will be displayed on Bills of Lading (BOLS).
           </Accordion.Header>
           <Accordion.Body>
