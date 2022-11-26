@@ -33,12 +33,27 @@ import SuppliersDetail from "./components/screens/suppliers/SuppliersDetail";
 import CustomersDetails from "./components/screens/customers/CustomersDetails";
 import ProductsDetails from "./components/screens/products/ProductsDetails";
 import DestinationsDetails from "./components/screens/destinations/DestinationsDetails";
+import ContactsDetails from "./components/screens/contacts/ContactsDetails"
+import ContactsDetailsChange from "./components/screens/contacts/ContactsDetailsChange";
+import TrailersDetails from "./components/screens/trailers/TrailersDetails";
+import EntitiesDetails from "./components/screens/entities/EntitiesDetails";
+import DriversDetails from "./components/screens/drivers/DriversDetails";
+import AddSuppliersName from "./components/screens/suppliers/AddSuppliersName";
+import AddSuppliersAddress from "./components/screens/suppliers/AddSuppliersAddress";
+import AddSuppliersOptionalSettings from "./components/screens/suppliers/AddSuppliersOptionalSettings";
+import AddSuppliersFinish from "./components/screens/suppliers/AddSuppliersFinish";
+import AddContactsBasics from "./components/screens/contacts/AddContactsBasics";
+import AddContactsNotifications from "./components/screens/contacts/AddContactsNotifications";
+import AddContactsFinish from "./components/screens/contacts/AddContactsFinish";
+import AddDestinationsName from "./components/screens/destinations/AddDestinationsName";
+import AddDestinationsTerminalSetting from "./components/screens/destinations/AddDestinationsTerminalSetting";
+import AddDestinationsFinish from "./components/screens/destinations/AddDestinationsFinish";
 export default function App() {
   return (
     <>
       <Routes>
         {/*============= profile section ===============*/}
-        <Route path="/" element={<ProductsDetails/>} />
+        <Route path="/" element={<AddDestinationsFinish/>} />
         <Route path="/profilesetting" element={<ProfileSetting />} />
         <Route path="/purchaseservices" element={<PurchaseServices />}/>
         <Route path="/productslicenses" element={<ProductsLicenses />}/>
@@ -59,9 +74,27 @@ export default function App() {
         <Route path="/terminals_detail" element={<TerminalsDetail/>} />
         <Route path="/suppliers_detail" element={<SuppliersDetail/>} />
         <Route path="/customers_details" element={<CustomersDetails/>} />
-        {/*  */}
+        <Route path="/drivers_details" element={<DriversDetails/>} />
+        <Route path="/entities_details" element={<EntitiesDetails/>} />
+        <Route path="/trailers_details" element={<TrailersDetails/>} />
         <Route path="/products_details" element={<ProductsDetails/>} />
         <Route path="/destinations_details" element={<DestinationsDetails/>} />
+        <Route path="/contacts_details" element={<ContactsDetails/>} />
+        <Route path="/contacts_details_change" element={<ContactsDetailsChange/>} />
+        {/* Add Suppliers  */}
+        <Route path="/add_suppliers_name" element={<AddSuppliersName/>} />
+        <Route path="/add_suppliers_address" element={<AddSuppliersAddress/>} />
+        <Route path="/add_suppliers_optional_settings" element={<AddSuppliersOptionalSettings/>} />
+        <Route path="/add_suppliers_finish" element={<AddSuppliersFinish/>} />
+        {/* Add Contacts */}
+        <Route path="/add_contacts_basics" element={<AddContactsBasics/>} />
+        <Route path="/add_contacts_notifications" element={<AddContactsNotifications/>} />
+        <Route path="/add_contacts_finish" element={<AddContactsFinish/>} />
+        {/* Add Destinations */}
+        <Route path="/add_destinations_name" element={<AddDestinationsName/>} />
+        <Route path="/add_destinations_terminal_setting" element={<AddDestinationsTerminalSetting/>} />
+        <Route path="/add_destinations_finish" element={<AddDestinationsFinish/>} />
+
         {/* top app bar */}
         <Route path="/insights" element={<Insights/>} />
         <Route path="/submitorde" element={<SubmitOrde/>} />

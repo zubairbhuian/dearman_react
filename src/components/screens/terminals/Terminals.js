@@ -4,9 +4,10 @@ import Topbar from "../../Navbar/Topbar";
 import { BsX, BsSearch } from "react-icons/bs";
 import TableRow from "../../tables/TableRow";
 import TableRowTitle from "../../tables/TableRowTitle";
+import SuccessModal from "../../modals/SuccessModal";
 
 export default function Terminals() {
-  // const [modalShow, setModalShow] = React.useState(false);
+  const [modalShow, setModalShow] = React.useState(false);
   return (
     <>
       <Topbar />
@@ -17,7 +18,7 @@ export default function Terminals() {
           <hr />
           <div className="del-sec">
             <div className="del-sec-left">
-              <button className="btn">
+              <button className="btn" onClick={()=>setModalShow(true)}>
                 <BsX className="me-2" />
                 Delete a Terminal
               </button>
@@ -55,6 +56,7 @@ export default function Terminals() {
           />
         </div>
       </div>
+      <SuccessModal show={modalShow} onHide={() => setModalShow(false)} />
     </>
   );
 }

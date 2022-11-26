@@ -35,9 +35,6 @@ export default function DestinationsDetails() {
           <Nav.Item>
             <Nav.Link eventKey="first">Overvew</Nav.Link>
           </Nav.Item>
-          <Nav.Item>
-            <Nav.Link eventKey="second">Security Info</Nav.Link>
-          </Nav.Item>
         </Nav>
         {/* Content */}
         <Tab.Content>
@@ -58,17 +55,6 @@ export default function DestinationsDetails() {
                       <p>Flint Hills Resources</p>
                       <Link className="nav-link ps-0" to="#">Manage customer name</Link>
                     </div>
-                  </div>
-          </Tab.Pane>
-          <Tab.Pane eventKey="second">
-          <h6 className="fw-6">className of Business</h6>
-                  <div className="business-tab-aria">
-                    <select className="form-select" aria-label="Default select example">
-                      <option selected>Open this select menu</option>
-                      <option value="1">One</option>
-                      <option value="2">Two</option>
-                      <option value="3">Three</option>
-                    </select>
                   </div>
           </Tab.Pane>
         </Tab.Content>
