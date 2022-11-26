@@ -5,8 +5,7 @@ import { BsX, BsSearch } from "react-icons/bs";
 import TableRow from "../../tables/TableRow";
 import TableRowTitle from "../../tables/TableRowTitle";
 
-export default function Terminals() {
-  // const [modalShow, setModalShow] = React.useState(false);
+export default function Customers() {
   return (
     <>
       <Topbar />
@@ -56,5 +55,5 @@ export default function Terminals() {
         </div>
       </div>
     </>
-  );
+  )
 }

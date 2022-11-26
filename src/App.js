@@ -28,12 +28,17 @@ import Insights from "./components/screens/insights/Insights";
 import SubmitOrde from "./components/screens/submit_orde/SubmitOrde";
 import OrderStatus from "./components/screens/order_status/OrderStatus";
 import OrderManagement from "./components/screens/order-management/OrderManagement";
+import TerminalsDetail from "./components/screens/terminals/TerminalsDetail";
+import SuppliersDetail from "./components/screens/suppliers/SuppliersDetail";
+import CustomersDetails from "./components/screens/customers/CustomersDetails";
+import ProductsDetails from "./components/screens/products/ProductsDetails";
+import DestinationsDetails from "./components/screens/destinations/DestinationsDetails";
 export default function App() {
   return (
     <>
       <Routes>
         {/*============= profile section ===============*/}
-        <Route path="/" element={<Terminals/>} />
+        <Route path="/" element={<ProductsDetails/>} />
         <Route path="/profilesetting" element={<ProfileSetting />} />
         <Route path="/purchaseservices" element={<PurchaseServices />}/>
         <Route path="/productslicenses" element={<ProductsLicenses />}/>
@@ -50,6 +55,13 @@ export default function App() {
         <Route path="/products" element={<Products/>} />
         <Route path="/destinations" element={<Destinations/>} />
         <Route path="/contacts" element={<Contacts/>} />
+        {/* sub */}
+        <Route path="/terminals_detail" element={<TerminalsDetail/>} />
+        <Route path="/suppliers_detail" element={<SuppliersDetail/>} />
+        <Route path="/customers_details" element={<CustomersDetails/>} />
+        {/*  */}
+        <Route path="/products_details" element={<ProductsDetails/>} />
+        <Route path="/destinations_details" element={<DestinationsDetails/>} />
         {/* top app bar */}
         <Route path="/insights" element={<Insights/>} />
         <Route path="/submitorde" element={<SubmitOrde/>} />
