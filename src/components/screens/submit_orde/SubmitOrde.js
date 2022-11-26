@@ -1,8 +1,9 @@
 import React from 'react'
+
 import Sidebar from '../../Navbar/Sidebar'
 import Topbar from '../../Navbar/Topbar'
 
-export default function Trailers() {
+export default function SubmitOrde() {
   return (
     <>
     <Topbar/>

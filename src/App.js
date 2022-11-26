@@ -15,22 +15,46 @@ import ProductsLicenses from "./components/screens/ProductsLicenses";
 import PaymentHistory from "./components/screens/PaymentHistory";
 import PaymentMethods from "./components/screens/payment_methods/PaymentMethods";
 import BillingNotifications from "./components/screens/billing_notifications/BillingNotifications";
-
+import Terminals from "./components/screens/terminals/Terminals";
+import Suppliers from "./components/screens/suppliers/Suppliers";
+import Customers from "./components/screens/customers/Customers"
+import Drivers from "./components/screens/drivers/Drivers"
+import Entities from "./components/screens/entities/Entities"
+import Trailers from "./components/screens/trailers/Trailers"
+import Products from "./components/screens/products/Products"
+import Destinations from "./components/screens/products/Products"
+import Contacts from "./components/screens/contacts/Contacts"
+import Insights from "./components/screens/insights/Insights";
+import SubmitOrde from "./components/screens/submit_orde/SubmitOrde";
+import OrderStatus from "./components/screens/order_status/OrderStatus";
+import OrderManagement from "./components/screens/order-management/OrderManagement";
 export default function App() {
   return (
     <>
       <Routes>
         {/*============= profile section ===============*/}
-        <Route path="/" element={<ProfileSetting/>} />
+        <Route path="/" element={<Terminals/>} />
         <Route path="/profilesetting" element={<ProfileSetting />} />
-        <Route path="/purchaseservices" element={<PurchaseServices />} />
-        <Route path="/productslicenses" element={<ProductsLicenses />} />
+        <Route path="/purchaseservices" element={<PurchaseServices />}/>
+        <Route path="/productslicenses" element={<ProductsLicenses />}/>
         <Route path="/paymenthistory" element={<PaymentHistory />} />
         <Route path="/paymentmethods" element={<PaymentMethods />} />
-        <Route
-          path="/billingnotifications"
-          element={<BillingNotifications />}
-        />
+        <Route path="/billingnotifications"element={<BillingNotifications />}/>
+        {/* right section */}
+        <Route path="/terminals" element={<Terminals />} />
+        <Route path="/suppliers" element={<Suppliers />} />
+        <Route path="/customers" element={<Customers/>} />
+        <Route path="/drivers" element={<Drivers />} />
+        <Route path="/entities" element={<Entities />} />
+        <Route path="/trailers" element={<Trailers />} />
+        <Route path="/products" element={<Products/>} />
+        <Route path="/destinations" element={<Destinations/>} />
+        <Route path="/contacts" element={<Contacts/>} />
+        {/* top app bar */}
+        <Route path="/insights" element={<Insights/>} />
+        <Route path="/submitorde" element={<SubmitOrde/>} />
+        <Route path="/orderstatus" element={<OrderStatus/>} />
+        <Route path="/ordermanagement" element={<OrderManagement/>} />
         {/* forms  route without appbar*/}
         <Route path="/login" element={<Login />} />
         <Route path="/loginPass" element={<LoginPass />} />
