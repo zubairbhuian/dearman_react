@@ -98,7 +98,6 @@ export default function AddDriversIndentiflication() {
                         <div className="Neon-input-dragDrop">
                           <div className="Neon-input-inner">
                             <Link className="Neon-input-choose-btn blue form-control">
-                              <BsFillCameraFill className="me-2" />
                               <BsFillCameraFill className="me-2" /> Front of
                               driver's license
                             </Link>
@@ -170,7 +169,7 @@ export default function AddDriversIndentiflication() {
                         <div className="Neon-input-dragDrop">
                           <div className="Neon-input-inner">
                             <Link className="Neon-input-choose-btn blue form-control">
-                              Front of TWIC
+                            <BsFillCameraFill className='me-2'/> Front of TWIC
                             </Link>
                           </div>
                         </div>
@@ -204,24 +203,17 @@ export default function AddDriversIndentiflication() {
           <div className="offcanvas-destinations-cta">
             <ul className="nav nav-pills mt-5">
               <li className="nav-item">
-                <Link
-                  data-bs-toggle="offcanvas"
-                  to="#"
-                  className="secound-btn mt-5 me-2 bg-tra"
-                >
+                <Link to="#" className="secound-btn mt-5 me-2 bg-tra" >
                   Back
                 </Link>
               </li>
               <li className="nav-item">
-                <Link data-bs-toggle="offcanvas" to="#" className="secound-btn">
+                <Link  to="#" className="secound-btn">
                   Next
                 </Link>
               </li>
             </ul>
-            <Link
-              to="destinations.html"
-              className="secound-btn mt-5 me-2 bg-tra"
-            >
+            <Link to="#"className="secound-btn mt-5 me-2 bg-tra">
               Cancel
             </Link>
           </div>

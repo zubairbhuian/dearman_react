@@ -55,12 +55,17 @@ import AddTrailersFinish from "./components/screens/trailers/AddTrailersFinish";
 import AddDriversName from "./components/screens/drivers/AddDriversName";
 import AddDriversIndentiflication from "./components/screens/drivers/AddDriversIndentiflication";
 import AddDriversFinish from "./components/screens/drivers/AddDriversFinish";
+import AddProductsName from "./components/screens/products/AddProductsName";
+import AddProductsProductType from "./components/screens/products/AddProductsProductType";
+import AddProductComplianceHazard from "./components/screens/Products/AddProductComplianceHazard";
+import AddProductOptionalSettings from "./components/screens/Products/AddProductOptionalSettings";
+import AddProductFinish from "./components/screens/Products/AddProductFinish";
 export default function App() {
   return (
     <>
       <Routes>
         {/*============= profile section ===============*/}
-        <Route path="/" element={<AddDriversIndentiflication/>} />
+        <Route path="/" element={<AddProductsName/>} />
         <Route path="/profilesetting" element={<ProfileSetting />} />
         <Route path="/purchaseservices" element={<PurchaseServices />}/>
         <Route path="/productslicenses" element={<ProductsLicenses />}/>
@@ -110,7 +115,12 @@ export default function App() {
         <Route path="/add_drivers_name" element={<AddDriversName/>} />
         <Route path="/add_drivers_indentiflication" element={<AddDriversIndentiflication/>} />
         <Route path="/add_drivers_finish" element={<AddDriversFinish/>} />
-
+        {/* Add Product */}
+        <Route path="/add_products_name" element={<AddProductsName/>} />
+        <Route path="/add_products_product_type" element={<AddProductsProductType/>} />
+        <Route path="/add_product_compliance_hazard" element={<AddProductComplianceHazard/>} />
+        <Route path="/add_product_optional_settings" element={<AddProductOptionalSettings/>} />
+        <Route path="/add_product_finish" element={<AddProductFinish/>} />
         {/* top app bar */}
         <Route path="/insights" element={<Insights/>} />
         <Route path="/submitorde" element={<SubmitOrde/>} />
