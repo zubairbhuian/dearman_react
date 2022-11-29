@@ -57,15 +57,16 @@ import AddDriversIndentiflication from "./components/screens/drivers/AddDriversI
 import AddDriversFinish from "./components/screens/drivers/AddDriversFinish";
 import AddProductsName from "./components/screens/products/AddProductsName";
 import AddProductsProductType from "./components/screens/products/AddProductsProductType";
-import AddProductComplianceHazard from "./components/screens/Products/AddProductComplianceHazard";
-import AddProductOptionalSettings from "./components/screens/Products/AddProductOptionalSettings";
-import AddProductFinish from "./components/screens/Products/AddProductFinish";
+import AddProductComplianceHazard from "./components/screens/products/AddProductComplianceHazard";
+import AddProductOptionalSettings from "./components/screens/products/AddProductOptionalSettings";
+import AddProductFinish from "./components/screens/products/AddProductFinish";
+
 export default function App() {
   return (
     <>
       <Routes>
         {/*============= profile section ===============*/}
-        <Route path="/" element={<AddProductsName/>} />
+        <Route path="/" element={<AddProductFinish/>} />
         <Route path="/profilesetting" element={<ProfileSetting />} />
         <Route path="/purchaseservices" element={<PurchaseServices />}/>
         <Route path="/productslicenses" element={<ProductsLicenses />}/>
