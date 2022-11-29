@@ -48,12 +48,19 @@ import AddContactsFinish from "./components/screens/contacts/AddContactsFinish";
 import AddDestinationsName from "./components/screens/destinations/AddDestinationsName";
 import AddDestinationsTerminalSetting from "./components/screens/destinations/AddDestinationsTerminalSetting";
 import AddDestinationsFinish from "./components/screens/destinations/AddDestinationsFinish";
+import AddTrailersName from "./components/screens/trailers/AddTrailersName";
+import AddTrailersCapacity from "./components/screens/trailers/AddTrailersCapacity";
+import AddTrailersInspection from "./components/screens/trailers/AddTrailersInspection";
+import AddTrailersFinish from "./components/screens/trailers/AddTrailersFinish";
+import AddDriversName from "./components/screens/drivers/AddDriversName";
+import AddDriversIndentiflication from "./components/screens/drivers/AddDriversIndentiflication";
+import AddDriversFinish from "./components/screens/drivers/AddDriversFinish";
 export default function App() {
   return (
     <>
       <Routes>
         {/*============= profile section ===============*/}
-        <Route path="/" element={<AddDestinationsFinish/>} />
+        <Route path="/" element={<AddDriversIndentiflication/>} />
         <Route path="/profilesetting" element={<ProfileSetting />} />
         <Route path="/purchaseservices" element={<PurchaseServices />}/>
         <Route path="/productslicenses" element={<ProductsLicenses />}/>
@@ -94,6 +101,15 @@ export default function App() {
         <Route path="/add_destinations_name" element={<AddDestinationsName/>} />
         <Route path="/add_destinations_terminal_setting" element={<AddDestinationsTerminalSetting/>} />
         <Route path="/add_destinations_finish" element={<AddDestinationsFinish/>} />
+        {/* Add Trailers */}
+        <Route path="/add_trailers_name" element={<AddTrailersName/>} />
+        <Route path="/add_trailers_capacity" element={<AddTrailersCapacity/>} />
+        <Route path="/add_trailers_inspection" element={<AddTrailersInspection/>} />
+        <Route path="/add_trailers_finish" element={<AddTrailersFinish/>} />
+        {/* Add drivers */}
+        <Route path="/add_drivers_name" element={<AddDriversName/>} />
+        <Route path="/add_drivers_indentiflication" element={<AddDriversIndentiflication/>} />
+        <Route path="/add_drivers_finish" element={<AddDriversFinish/>} />
 
         {/* top app bar */}
         <Route path="/insights" element={<Insights/>} />
