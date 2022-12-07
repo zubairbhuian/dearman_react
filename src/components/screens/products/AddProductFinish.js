@@ -113,7 +113,6 @@ export default function AddProductFinish() {
         </div>
       </div>
     </div>
-
     </>
   )
 }
