@@ -66,7 +66,7 @@ export default function App() {
     <>
       <Routes>
         {/*============= profile section ===============*/}
-        <Route path="/" element={<AddProductFinish/>} />
+        <Route path="/" element={<SubmitOrde/>} />
         <Route path="/profilesetting" element={<ProfileSetting />} />
         <Route path="/purchaseservices" element={<PurchaseServices />}/>
         <Route path="/productslicenses" element={<ProductsLicenses />}/>

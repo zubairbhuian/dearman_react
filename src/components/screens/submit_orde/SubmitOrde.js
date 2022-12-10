@@ -10,7 +10,7 @@ export default function SubmitOrde() {
     <div className="main-body">
       <Sidebar/>
       <div className="body-content">
-        
+        This is demo Submit order
       </div>
     </div>
 
