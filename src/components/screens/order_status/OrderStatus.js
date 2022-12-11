@@ -5,6 +5,6 @@ import Topbar from '../../Navbar/Topbar'
 
 export default function OrderStatus() {
   return (
-    <div>OrderStatus</div>
+    <div>This is demo OrderStatus</div>
   )
 }
