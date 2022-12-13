@@ -60,13 +60,20 @@ import AddProductsProductType from "./components/screens/products/AddProductsPro
 import AddProductComplianceHazard from "./components/screens/products/AddProductComplianceHazard";
 import AddProductOptionalSettings from "./components/screens/products/AddProductOptionalSettings";
 import AddProductFinish from "./components/screens/products/AddProductFinish";
+import Topappbar from "./components/screens/app/topAppbar";
+import Sideappbar from "./components/screens/app/sideAppbar";
+
 
 export default function App() {
   return (
     <>
       <Routes>
         {/*============= profile section ===============*/}
-        <Route path="/" element={<SubmitOrde/>} />
+        <Route path="/" element={<Topappbar/>} />
+        {/* Demo  */}
+        <Route path="/profilesetting" element={< Sideappbar/>} />
+        <Route path="/profilesetting" element={< Topappbar/>} />
+        {/* Demo  */}
         <Route path="/profilesetting" element={<ProfileSetting />} />
         <Route path="/purchaseservices" element={<PurchaseServices />}/>
         <Route path="/productslicenses" element={<ProductsLicenses />}/>

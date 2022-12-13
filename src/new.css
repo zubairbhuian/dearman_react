@@ -46,3 +46,23 @@
   margin-right: auto;
   margin-left: auto;
 }
+
+.nav-avatar {
+  width: 30px;
+  height: 30px;
+  background-color: red;
+  border-radius: 50%;
+}
+
+.dropdown-menu.show,
+.cus-nav-right-side.show {
+  display: block;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.basic-navbar-nav {
+  color: red;
+}
