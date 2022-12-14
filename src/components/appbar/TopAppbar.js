@@ -2,26 +2,28 @@ import React from "react";
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import { Link } from "react-router-dom";
 
-import Logo from "../../assets/images/logo.png"
-import { BsTextParagraph } from "react-icons/bs";
+import Logo from "../assets/images/logo.png"
+import { BsTextParagraph,BsList } from "react-icons/bs";
 import SideAppbar from "./SideAppbar";
 
 
 export default function TopAppbar() {
   const [navShow, setNavShow] = React.useState(true);
   const [subNavShow, setSubNavShow] = React.useState(true);
-  const [sidebarShow, setSidebarShow] = React.useState(true);
+  const [sidebarShow, setSidebarShow] = React.useState(false);
   return (
     <>
     <Navbar bg="dark" variant="dark" expand="lg">
     <Container fluid>
+      <div className="dextop-sidebar" onClick={()=>setSidebarShow(!sidebarShow)}>
+       <BsList/>
+      </div>
       <Navbar.Brand to="#">
         <img src={Logo} alt="logo" />
       </Navbar.Brand>
-      <div class="side-appbar-icon ">
+      <div class="side-appbar-icon " onClick={()=>setSidebarShow(!sidebarShow)}>
           <BsTextParagraph/>
         </div>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />

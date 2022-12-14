@@ -1,17 +1,15 @@
 import React from 'react'
 
-import Sidebar from '../../Navbar/Sidebar'
-import Topbar from '../../Navbar/Topbar'
 import { BsX,BsPerson, BsSearch } from "react-icons/bs";
 import TableRow from "../../tables/TableRow";
 import TableRowTitle from "../../tables/TableRowTitle";
+import TopAppbar from '../../appbar/TopAppbar';
 
 export default function Contacts() {
   return (
     <>
-      <Topbar />
+      <TopAppbar />
       <div className="main-body">
-        <Sidebar />
         <div className="body-content">
           <h1 className="header">Contacts</h1>
           <hr />

@@ -1,16 +1,11 @@
 import React from "react";
-
-import Sidebar from "../Navbar/Sidebar";
-import Topbar from "../Navbar/Topbar";
+import TopAppbar from "../appbar/TopAppbar";
 
 export default function PaymentHistory() {
   return (
     <div>
-      <Topbar />
+      <TopAppbar />
       <div className="main-body">
-        {/* ====side bar==== */}
-        <Sidebar />
-        {/*==== body area ==== */}
         <div class="body-content">
           <div class="pp-header-area pt-3 pb-4">
             <h2>Payment history</h2>

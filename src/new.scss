@@ -1,3 +1,8 @@
+@import "../node_modules//bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+
 .bn-CircleFill{
     color: green;
 }
@@ -56,3 +61,44 @@
     height: 30px;
   }
   
+.dextop-sidebar{
+    color: rgb(0, 0, 0);
+    position: absolute;
+    left: 30px;
+    top: 80px;
+    @include media-breakpoint-down(lg) {
+        display: none;
+    }
+   svg{
+    width: 25px;
+    height: 25px;
+   }
+   background: rgb(235, 235, 235);
+   padding: 7px;
+   border-radius: 50%;
+   border: 1px solid rgb(187, 187, 187);
+   transition: all .3s ease-in;
+   &:hover{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background: rgb(216, 216, 216);
+   }
+    
+}
+.sideappbar-offcanvas{
+    top: 56px;
+    width: 100% !important;
+    @include media-breakpoint-up(lg) {
+    top:63px;
+    width: 180px !important; 
+    }
+    .offcanvas-body{
+        padding: 0;
+    }
+    .side-appbar .navbar{
+        margin-top: 0;
+    }
+    .offcanvas-header{
+        padding-top: 0.8rem;
+        padding-bottom: 0;
+    }
+}

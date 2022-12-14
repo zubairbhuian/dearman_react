@@ -7,13 +7,13 @@ import { BsX } from "react-icons/bs";
 import Sidebar from "../../Navbar/Sidebar";
 import Topbar from "../../Navbar/Topbar";
 import { Link } from "react-router-dom";
+import TopAppbar from "../../appbar/TopAppbar";
 
 export default function CustomersDetails() {
   return (
     <>
-      <Topbar />
+      <TopAppbar />
       <div className="main-body">
-        <Sidebar />
         <div className="body-content">
           <div className="profile-card">
             <div className="pp-content">

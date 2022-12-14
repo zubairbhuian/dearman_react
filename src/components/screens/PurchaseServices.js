@@ -1,14 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Sidebar from "../Navbar/Sidebar";
-import Topbar from "../Navbar/Topbar";
+import TopAppbar from "../appbar/TopAppbar";
 
 export default function PurchaseServices() {
   return (
     <div>
-      <Topbar />
+      <TopAppbar />
       <div className="main-body">
-        <Sidebar />
         <div class="body-content">
           <div class="pp-header-area pt-3 pb-4">
             <h2>Purchase services</h2>
