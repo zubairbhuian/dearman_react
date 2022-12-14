@@ -1,14 +1,12 @@
 import React from 'react'
-
-import Sidebar from '../../Navbar/Sidebar'
-import Topbar from '../../Navbar/Topbar'
+import TopAppbar from '../../appbar/TopAppbar'
 
 export default function OrderManagement() {
   return (
     <>
-    <Topbar/>
+    <TopAppbar/>
     <div className="main-body">
-      <Sidebar/>
+
       <div className="body-content">
         
       </div>

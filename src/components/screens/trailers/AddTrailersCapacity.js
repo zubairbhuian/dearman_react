@@ -1,15 +1,13 @@
 import React from 'react'
-import Sidebar from "../../Navbar/Sidebar";
-import Topbar from "../../Navbar/Topbar";
 import { BsCloudUpload } from "react-icons/bs";
+import TopAppbar from '../../appbar/TopAppbar';
 
 
 export default function AddTrailersCapacity() {
   return (
     <>
-    <Topbar/>
+    <TopAppbar/>
     <div className="main-body">
-      <Sidebar/>
       <div className="body-content">
       <h5>Add a driver</h5>
         <div className="row row-cols-1 row-cols-xl-3">

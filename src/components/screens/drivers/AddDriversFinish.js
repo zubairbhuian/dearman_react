@@ -1,14 +1,12 @@
 import React from 'react'
+import TopAppbar from '../../appbar/TopAppbar';
 
-import Sidebar from "../../Navbar/Sidebar";
-import Topbar from "../../Navbar/Topbar";
 
 export default function AddDriversFinish() {
   return (
     <>
-    <Topbar/>
+    <TopAppbar/>
     <div className="main-body">
-      <Sidebar/>
       <div className="body-content">
       <div className="row row-cols-1 row-cols-xl-3">
           <div className="col user-roade-map">

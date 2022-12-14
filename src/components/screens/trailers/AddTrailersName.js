@@ -1,15 +1,12 @@
-import Sidebar from "../../Navbar/Sidebar";
-import Topbar from "../../Navbar/Topbar";
-
 import React from 'react'
 import { Link } from "react-router-dom";
+import TopAppbar from "../../appbar/TopAppbar";
 
 export default function AddTrailersName() {
   return (
     <>
-    <Topbar/>
+    <TopAppbar/>
     <div className="main-body">
-      <Sidebar/>
       <div className="body-content">
       <h5>Add a trailer</h5>
         <div className="row row-cols-1 row-cols-xl-3">

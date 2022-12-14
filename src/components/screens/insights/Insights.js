@@ -1,14 +1,12 @@
 import React from 'react'
+import TopAppbar from '../../appbar/TopAppbar'
 
-import Sidebar from '../../Navbar/Sidebar'
-import Topbar from '../../Navbar/Topbar'
 
 export default function Insights() {
   return (
     <>
-    <Topbar/>
+    <TopAppbar/>
     <div className="main-body">
-      <Sidebar/>
       <div className="body-content">
         
       </div>

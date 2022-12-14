@@ -1,15 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import TopAppbar from '../../appbar/TopAppbar';
 
-import Sidebar from "../../Navbar/Sidebar";
-import Topbar from "../../Navbar/Topbar";
 
 export default function AddSuppliersOptionalSettings() {
   return (
     <>
-    <Topbar/>
+    <TopAppbar/>
     <div className="main-body">
-      <Sidebar/>
       <div className="body-content">
       <div className="row row-cols-1 row-cols-xl-3">
       <div className="col user-roade-map">

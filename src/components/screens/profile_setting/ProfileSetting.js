@@ -1,23 +1,20 @@
 import React from "react";
-import Sidebar from "../../Navbar/Sidebar";
-import Topbar from "../../Navbar/Topbar";
+
 import Nav from 'react-bootstrap/Nav';
 import Tab from 'react-bootstrap/Tab';
 import PsAddress from "./tabs/PsAddress";
 import PsOvervew from "./tabs/PsOvervew";
 import PsSecurityInfo from "./tabs/PsSecurityInfo";
 import PsBusinessInfo from "./tabs/PsBusinessInfo";
+import TopAppbar from "../../appbar/TopAppbar";
 
 
 
 export default function ProfileSetting() {
   return (
     <div>
-      <Topbar />
+      <TopAppbar />
       <div className="main-body">
-        {/* ====side bar==== */}
-        <Sidebar />
-        {/*==== body area ==== */}
         <div className="body-content">
         <Tab.Container id="left-tabs-example" defaultActiveKey="first">
           {/* Nav  */}

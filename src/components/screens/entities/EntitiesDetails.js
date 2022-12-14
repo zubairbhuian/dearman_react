@@ -4,16 +4,14 @@ import Nav from 'react-bootstrap/Nav';
 import Tab from 'react-bootstrap/Tab';
 import { BsX,BsExclamationCircle } from "react-icons/bs";
 
-import Sidebar from "../../Navbar/Sidebar";
-import Topbar from "../../Navbar/Topbar";
+import TopAppbar from "../../appbar/TopAppbar";
 
 
 export default function EntitiesDetails() {
   return (
     <>
-      <Topbar />
+      <TopAppbar />
       <div className="main-body">
-        <Sidebar />
         <div className="body-content">
         <div class="profile-card">
             <div class="pp-content">

@@ -2,12 +2,11 @@ import React from "react";
 import { FiPlus } from "react-icons/fi";
 import { BsFillCheckCircleFill } from "react-icons/bs";
 
-import Sidebar from "../../Navbar/Sidebar";
-import Topbar from "../../Navbar/Topbar";
 import VisaLogo from "../../assets/images/icons/visa-logo.png";
 import { Link } from "react-router-dom";
 import PaymentForm from "./offcanvas/PaymentForm";
 import PaymentDetails from "./offcanvas/PaymentDetails";
+import TopAppbar from "../../appbar/TopAppbar";
 
 export default function PaymentMethods() {
   const [formShow, setFormShow] = React.useState(false);
@@ -15,11 +14,8 @@ export default function PaymentMethods() {
   return (
     <>
       <div>
-        <Topbar />
+        <TopAppbar />
         <div className="main-body">
-          {/* ====side bar==== */}
-          <Sidebar />
-          {/*==== body area ==== */}
           <div class="body-content">
             <div class="pp-header-area pt-3 pb-4">
               <h2>Payment methods</h2>

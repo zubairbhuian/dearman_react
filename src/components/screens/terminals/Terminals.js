@@ -1,18 +1,16 @@
 import React from "react";
-import Sidebar from "../../Navbar/Sidebar";
-import Topbar from "../../Navbar/Topbar";
 import { BsX, BsSearch } from "react-icons/bs";
 import TableRow from "../../tables/TableRow";
 import TableRowTitle from "../../tables/TableRowTitle";
 import SuccessModal from "../../modals/SuccessModal";
+import TopAppbar from "../../appbar/TopAppbar";
 
 export default function Terminals() {
   const [modalShow, setModalShow] = React.useState(false);
   return (
     <>
-      <Topbar />
+      <TopAppbar />
       <div className="main-body">
-        {/* <Sidebar /> */}
         <div className="body-content">
           <h1 className="header">Terminals</h1>
           <hr />
