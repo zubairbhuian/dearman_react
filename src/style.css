@@ -12569,6 +12569,8 @@ h5 {
 
 .side-appbar-icon svg {
   fill: var(--white-color);
+  width: 30px;
+  height: 30px;
 }
 
 @media (max-width: 991.98px) {

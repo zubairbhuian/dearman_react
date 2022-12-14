@@ -6,17 +6,24 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import { Link } from "react-router-dom";
 
 import Logo from "../../assets/images/logo.png"
+import { BsTextParagraph } from "react-icons/bs";
+import SideAppbar from "./SideAppbar";
 
 
 export default function TopAppbar() {
   const [navShow, setNavShow] = React.useState(true);
   const [subNavShow, setSubNavShow] = React.useState(true);
+  const [sidebarShow, setSidebarShow] = React.useState(true);
   return (
+    <>
     <Navbar bg="dark" variant="dark" expand="lg">
     <Container fluid>
       <Navbar.Brand to="#">
         <img src={Logo} alt="logo" />
       </Navbar.Brand>
+      <div class="side-appbar-icon ">
+          <BsTextParagraph/>
+        </div>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="me-auto">
@@ -71,5 +78,7 @@ export default function TopAppbar() {
       </Navbar.Collapse>
     </Container>
   </Navbar>
+  <SideAppbar show={sidebarShow} onHide={()=>setSidebarShow(false)}/>
+  </>
   );
 }

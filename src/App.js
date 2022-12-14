@@ -61,7 +61,8 @@ import AddProductComplianceHazard from "./components/screens/products/AddProduct
 import AddProductOptionalSettings from "./components/screens/products/AddProductOptionalSettings";
 import AddProductFinish from "./components/screens/products/AddProductFinish";
 import Topappbar from "./components/screens/app/topAppbar";
-import Sideappbar from "./components/screens/app/sideAppbar";
+import SideAppbar from "./components/screens/app/SideAppbar";
+import Appbar from "./components/screens/app/Appbar";
 
 
 export default function App() {
@@ -71,8 +72,9 @@ export default function App() {
         {/*============= profile section ===============*/}
         <Route path="/" element={<Topappbar/>} />
         {/* Demo  */}
-        <Route path="/profilesetting" element={< Sideappbar/>} />
+        <Route path="/profilesetting" element={< SideAppbar/>} />
         <Route path="/profilesetting" element={< Topappbar/>} />
+        <Route path="/profilesetting" element={< Appbar/>} />
         {/* Demo  */}
         <Route path="/profilesetting" element={<ProfileSetting />} />
         <Route path="/purchaseservices" element={<PurchaseServices />}/>

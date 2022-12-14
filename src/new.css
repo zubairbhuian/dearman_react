@@ -63,6 +63,8 @@
   color: rgba(255, 255, 255, 0.55);
 }
 
-.basic-navbar-nav {
-  color: red;
+.side-appbar-icon svg {
+  fill: var(--white-color);
+  width: 30px;
+  height: 30px;
 }

@@ -12,7 +12,7 @@ export default function Terminals() {
     <>
       <Topbar />
       <div className="main-body">
-        <Sidebar />
+        {/* <Sidebar /> */}
         <div className="body-content">
           <h1 className="header">Terminals</h1>
           <hr />
